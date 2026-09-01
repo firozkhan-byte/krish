@@ -1,0 +1,115 @@
+# ---- Tooling / environment (not part of the deployed site) ----
+node_modules/
+.claude/
+package-lock.json
+
+# ---- Scratch / working files left over from content work ----
+scratch_mosambi/
+_check-header.js
+_wiki_retry2.log
+_gen_gitignore.mjs
+_orphaned_assets.txt
+_screenshot-desktop.png
+_screenshot-mobile.png
+
+# ---- Stray local files not referenced by the site ----
+Krish NX Logo.png
+cowdung.jpeg
+lucide_icons_list.txt
+WhatsApp Unknown 2026-08-04 at 12.07.28 PM/
+
+# ---- Source PDFs / raw photos used only to build product images
+#      (final cropped images already live under assets/products/) ----
+new tab pdf/images/
+new tab pdf/jjmp/
+assets/products/swadify/
+
+# ---- Orphaned assets: not referenced anywhere in index.html/style.css
+#      (superseded duplicates / unused leftovers from earlier passes) ----
+assets/apeda.png
+assets/apeda.webp
+assets/b0ecac9905a05820536e6661d8b02e8b.webp
+assets/brand/kirish-nx-logo.jpg
+assets/brand/logo-full.png
+assets/brand/logo-mark.png
+assets/fssie logo.png
+assets/haacp.jfif
+assets/halal.jfif
+assets/iso.png
+assets/lifestyle/aakash-namkeen-range.jpg
+assets/lifestyle/gopal-lifestyle.jpg
+assets/lifestyle/mango-achar.png
+assets/made in india.jfif
+assets/manufacturing/plant-1.jpg
+assets/manufacturing/plant-2.jpg
+assets/manufacturing/plant-3.jpg
+assets/manufacturing/plant-4.jpg
+assets/product of india.avif
+assets/products/aakash-banana-chips.jpg
+assets/products/aakash-crispy-corn-puffs.jpg
+assets/products/aakash-fingers-pasta.jpg
+assets/products/aakash-jungle-safari.jpg
+assets/products/aakash-krispy-karare-flaming-hot.jpg
+assets/products/aakash-krispy-karare-korean-masala.jpg
+assets/products/aakash-krispy-karare-masala-tadka.jpg
+assets/products/aakash-krispy-karare-tangy-tomato.jpg
+assets/products/aakash-lachha-pheni.jpg
+assets/products/aakash-masala-matar.jpg
+assets/products/aakash-moon-chips.jpg
+assets/products/aakash-noodles-crazy-sticks.jpg
+assets/products/aakash-noodles-fryums.jpg
+assets/products/aakash-peanut-chikki.jpg
+assets/products/aakash-pipesss.jpg
+assets/products/aakash-potato-bite.jpg
+assets/products/aakash-premium-lachha-pheni.jpg
+assets/products/aakash-puffsss-tangy-tomato.jpg
+assets/products/aakash-school-masti.jpg
+assets/products/agrawal-black-pepper-powder.jpg
+assets/products/agrawal-chaat-masala.jpg
+assets/products/agrawal-chhole-masala.jpg
+assets/products/agrawal-coriander-powder.jpg
+assets/products/agrawal-dry-ginger-powder.jpg
+assets/products/agrawal-dry-mango-powder.jpg
+assets/products/agrawal-garam-masala.jpg
+assets/products/agrawal-jaljeera-masala.jpg
+assets/products/agrawal-kashmiri-mirch-powder.jpg
+assets/products/agrawal-kitchen-king-masala.jpg
+assets/products/agrawal-mild-spicy-red-chilli-powder.jpg
+assets/products/agrawal-pani-puri-masala.jpg
+assets/products/agrawal-pav-bhaji-masala.jpg
+assets/products/agrawal-poha-masala.jpg
+assets/products/agrawal-sambhar-masala.jpg
+assets/products/agrawal-shahi-biryani-masala.jpg
+assets/products/agrawal-shahi-paneer-masala.jpg
+assets/products/agrawal-teja-red-chilli-powder.jpg
+assets/products/agrawal-turmeric-powder.jpg
+assets/products/all-in-one-mix.jpg
+assets/products/aloo-bhujiya-cutout.png
+assets/products/aloo-bhujiya-pouch.jpg
+assets/products/aloo-bhujiya.jpg
+assets/products/cake-rusk.jpg
+assets/products/dhananjay-til-laddoo-cutout.png
+assets/products/fiki-nukti.jpg
+assets/products/freshoneed-lemon-coriander-rice-cutout.png
+assets/products/freshoneed-veg-biryani-cutout.png
+assets/products/gagan-beetroot-powder.jpg
+assets/products/gagan-garlic-powder.jpg
+assets/products/gagan-ginger-powder.jpg
+assets/products/gagan-white-onion-processed.jpg
+assets/products/gujarati-mixture.jpg
+assets/products/khatta-meetha-mix-cutout.png
+assets/products/khatta-meetha-mix.jpg
+assets/products/laung-sev.jpg
+assets/products/moong-mogar.jpg
+assets/products/nccm-banarasi-paan-cutout.png
+assets/products/ratlami-sev-cutout.png
+assets/products/ratlami-sev.jpg
+assets/products/roastytasty-aloo-lachha.jpg
+assets/products/roastytasty-cookies.jpg
+assets/products/roastytasty-instant-millet-range.jpg
+assets/products/roastytasty-millet-dryfruit-ladoo.jpg
+assets/products/roastytasty-peanuts.jpg
+assets/products/roastytasty-sweet-millet-chikki.jpg
+assets/products/shakkarpara.jpg
+assets/products/super-mixture.jpg
+assets/products/ujjaini-sev.jpg
