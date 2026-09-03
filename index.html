@@ -95,8 +95,11 @@
           <span class="lang-switch__spinner" id="langSpinner" aria-hidden="true"></span>
           <div id="google_translate_element"></div>
           <div class="lang-switch__fallback" id="langFallback" hidden>
-            <a href="#" target="_blank" rel="noopener" data-lang="zh-CN">中文</a>
-            <a href="#" target="_blank" rel="noopener" data-lang="ru">Русский</a>
+            <select id="langFallbackSelect" aria-label="Select language">
+              <option value="en" selected>English</option>
+              <option value="zh-CN">中文</option>
+              <option value="ru">Русский</option>
+            </select>
           </div>
         </div>
         <a href="#contact" class="btn btn--primary nav__cta">Get a Quote</a>

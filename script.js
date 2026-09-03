@@ -502,10 +502,19 @@
     const widgetEl = doc.getElementById('google_translate_element');
     const spinnerEl = doc.getElementById('langSpinner');
     const fallbackEl = doc.getElementById('langFallback');
-    if (!widgetEl || !spinnerEl || !fallbackEl) return;
+    const fallbackSelect = doc.getElementById('langFallbackSelect');
+    if (!widgetEl || !spinnerEl || !fallbackEl || !fallbackSelect) return;
 
-    fallbackEl.querySelectorAll('a[data-lang]').forEach((a) => {
-      a.href = `https://translate.google.com/translate?sl=en&tl=${a.dataset.lang}&u=${encodeURIComponent(location.href)}`;
+    // Page itself always stays English by default. Picking Chinese or
+    // Russian opens Google's translated proxy in a new tab, then the
+    // dropdown snaps back to English since the current tab didn't change.
+    fallbackSelect.addEventListener('change', () => {
+      const lang = fallbackSelect.value;
+      if (lang !== 'en') {
+        const url = `https://translate.google.com/translate?sl=en&tl=${lang}&u=${encodeURIComponent(location.href)}`;
+        window.open(url, '_blank', 'noopener');
+      }
+      fallbackSelect.value = 'en';
     });
 
     let resolved = false;
