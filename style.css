@@ -526,12 +526,17 @@ iframe.skiptranslate,.goog-te-banner-frame{display:none!important;visibility:hid
 .cert-card p{font-size:.85rem;color:var(--muted);margin:0 0 .6rem}
 .cert-card__id{font-family:var(--font-head);font-size:.72rem;font-weight:700;color:var(--gold-600);letter-spacing:.02em}
 
-.cert-split{display:grid;grid-template-columns:1fr 1fr;gap:2.4rem;align-items:center;margin-top:2.2rem}
+.cert-split{display:grid;grid-template-columns:1fr 1fr;gap:2.4rem;align-items:stretch;margin-top:2.2rem}
 
-.cert-badges{margin:0;text-align:center}
-.cert-badges img{max-width:100%;width:100%;height:auto;display:inline-block;background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:1.4rem;box-shadow:var(--shadow-lg)}
+.cert-badges{margin:0;min-width:0;display:flex;align-items:center;justify-content:center;overflow:hidden}
+.cert-badges img{max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain;display:block;background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:1.4rem;box-shadow:var(--shadow-lg)}
 
-.cert-doc-scroll{overflow-x:auto;overflow-y:hidden;-webkit-overflow-scrolling:touch;padding-bottom:.9rem;scrollbar-width:thin;scrollbar-color:var(--gold-600) var(--surface)}
+.cert-slider{position:relative;min-width:0;display:flex;align-items:center;gap:.6rem}
+.cert-slider__arrow{flex:none;display:flex;align-items:center;justify-content:center;width:44px;height:44px;border-radius:50%;border:1px solid var(--line);background:#fff;color:var(--navy);cursor:pointer;box-shadow:var(--shadow-lg);transition:transform .3s var(--ease),background .3s,color .3s}
+.cert-slider__arrow:hover{background:var(--gold-600);color:#fff;transform:scale(1.08)}
+.cert-slider__arrow:active{transform:scale(.95)}
+
+.cert-doc-scroll{flex:1;min-width:0;overflow-x:auto;overflow-y:hidden;-webkit-overflow-scrolling:touch;padding-bottom:.9rem;scrollbar-width:thin;scrollbar-color:var(--gold-600) var(--surface)}
 .cert-doc-scroll::-webkit-scrollbar{height:8px}
 .cert-doc-scroll::-webkit-scrollbar-track{background:var(--surface);border-radius:99px}
 .cert-doc-scroll::-webkit-scrollbar-thumb{background:var(--gold-600);border-radius:99px}

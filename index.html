@@ -15635,8 +15635,11 @@
               loading="lazy" />
           </div>
 
-          <div class="cert-doc-scroll" data-reveal>
-            <div class="cert-doc-grid">
+          <div class="cert-slider" data-reveal>
+            <button type="button" class="cert-slider__arrow cert-slider__arrow--prev" id="certPrev"
+              aria-label="Scroll certificates left"><i class="fa-solid fa-chevron-left"></i></button>
+            <div class="cert-doc-scroll" id="certDocScroll">
+              <div class="cert-doc-grid">
               <a class="cert-doc-card" href="assets/certificates/iso-22000-2018-certificate.jpg" target="_blank"
                 rel="noopener">
                 <img src="assets/certificates/thumbs/iso-22000-2018-certificate.jpg"
@@ -15676,6 +15679,9 @@
                   License</span>
               </a>
             </div>
+            </div>
+            <button type="button" class="cert-slider__arrow cert-slider__arrow--next" id="certNext"
+              aria-label="Scroll certificates right"><i class="fa-solid fa-chevron-right"></i></button>
           </div>
         </div>
       </div>
