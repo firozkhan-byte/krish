@@ -526,6 +526,9 @@ iframe.skiptranslate,.goog-te-banner-frame{display:none!important;visibility:hid
 .cert-card p{font-size:.85rem;color:var(--muted);margin:0 0 .6rem}
 .cert-card__id{font-family:var(--font-head);font-size:.72rem;font-weight:700;color:var(--gold-600);letter-spacing:.02em}
 
+.cert-badges{margin:2.2rem 0 0;text-align:center}
+.cert-badges img{max-width:560px;width:100%;height:auto;display:inline-block;background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:1.4rem;box-shadow:var(--shadow-lg)}
+
 .cert-doc-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:1.2rem;margin-top:2.2rem}
 .cert-doc-card{display:block;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;transition:transform .4s var(--ease),box-shadow .4s var(--ease),border-color .4s}
 .cert-doc-card:hover{transform:translateY(-8px);box-shadow:var(--shadow-lg);border-color:transparent}
