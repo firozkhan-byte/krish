@@ -230,6 +230,13 @@ h1,h2,h3,h4{margin:0;line-height:1.15;font-family:var(--font-head);font-weight:7
   -webkit-appearance:none;appearance:none;padding:.1em 0;margin:0;
 }
 .lang-switch .goog-te-gadget .goog-te-combo option{color:var(--navy);background:#fff;padding:15px}
+
+.lang-switch__spinner{width:13px;height:13px;flex:none;border-radius:50%;border:2px solid rgba(255,255,255,.3);border-top-color:var(--gold);animation:lang-spin .8s linear infinite}
+.lang-switch__spinner[hidden]{display:none}
+@keyframes lang-spin{to{transform:rotate(360deg)}}
+.lang-switch__fallback{font-family:var(--font-head);font-weight:600;font-size:.82rem;color:#fff;text-decoration:none;white-space:nowrap}
+.lang-switch__fallback:hover{color:var(--gold)}
+.lang-switch__fallback[hidden]{display:none}
 html>body{top:0!important}
 iframe.skiptranslate,.goog-te-banner-frame{display:none!important;visibility:hidden!important;height:0!important}
 .goog-tooltip,.goog-tooltip:hover{display:none!important}

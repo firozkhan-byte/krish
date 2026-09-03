@@ -491,6 +491,50 @@
   };
 
   /* ------------------------------------------------------------------
+     12b. Language switcher loading state + fallback
+     The Google widget above can take anywhere from a few seconds to
+     15+ (or fail outright if an ad-blocker strips its script). Show a
+     spinner while it loads; if it isn't ready in 6s, swap in a direct
+     link to Google's page-translate proxy. Keeps polling afterwards
+     in case the widget still shows up late, and switches back to it.
+     ------------------------------------------------------------------ */
+  (function () {
+    const widgetEl = doc.getElementById('google_translate_element');
+    const spinnerEl = doc.getElementById('langSpinner');
+    const fallbackEl = doc.getElementById('langFallback');
+    if (!widgetEl || !spinnerEl || !fallbackEl) return;
+
+    const browserLang = (navigator.language || 'en-US').split('-')[0];
+    const targetLang = browserLang === 'en' ? 'hi' : browserLang;
+    fallbackEl.href = `https://translate.google.com/translate?sl=en&tl=${targetLang}&u=${encodeURIComponent(location.href)}`;
+
+    let resolved = false;
+    let attempts = 0;
+    const poll = setInterval(() => {
+      attempts++;
+      // .goog-te-combo can exist in the DOM with 0 options for a long
+      // time before Google actually populates it — only options.length
+      // confirms the widget is genuinely usable.
+      const combo = widgetEl.querySelector('.goog-te-combo');
+      if (combo && combo.options.length > 0) {
+        resolved = true;
+        spinnerEl.hidden = true;
+        fallbackEl.hidden = true;
+        clearInterval(poll);
+      } else if (attempts >= 150) {
+        clearInterval(poll);
+      }
+    }, 400);
+
+    setTimeout(() => {
+      if (!resolved) {
+        spinnerEl.hidden = true;
+        fallbackEl.hidden = false;
+      }
+    }, 6000);
+  })();
+
+  /* ------------------------------------------------------------------
      13. Basic content protection (deterrent only — see note below)
      - Blocks right-click and drag anywhere on the site
      - Blocks common "view source / save / devtools" shortcuts

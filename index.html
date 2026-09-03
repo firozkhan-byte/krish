@@ -90,9 +90,11 @@
         <a href="#why" class="nav__link">Why Us</a>
         <a href="#certificates" class="nav__link">Certificates</a>
         <a href="#contact" class="nav__link">Contact</a>
-        <div class="lang-switch" aria-label="Select language">
+        <div class="lang-switch" id="langSwitch" aria-label="Select language">
           <i class="fa-solid fa-globe" aria-hidden="true"></i>
+          <span class="lang-switch__spinner" id="langSpinner" aria-hidden="true"></span>
           <div id="google_translate_element"></div>
+          <a class="lang-switch__fallback" id="langFallback" href="#" target="_blank" rel="noopener" hidden>Translate</a>
         </div>
         <a href="#contact" class="btn btn--primary nav__cta">Get a Quote</a>
       </nav>
