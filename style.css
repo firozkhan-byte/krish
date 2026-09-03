@@ -528,8 +528,8 @@ iframe.skiptranslate,.goog-te-banner-frame{display:none!important;visibility:hid
 
 .cert-split{display:grid;grid-template-columns:1fr 1fr;gap:2.4rem;align-items:stretch;margin-top:2.2rem}
 
-.cert-badges{margin:0;min-width:0;display:flex;align-items:center;justify-content:center;overflow:hidden}
-.cert-badges img{max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain;display:block;background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:1.4rem;box-shadow:var(--shadow-lg)}
+.cert-badges{position:relative;margin:0;min-width:0;min-height:0;overflow:hidden}
+.cert-badges img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;box-sizing:border-box;background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:1.4rem;box-shadow:var(--shadow-lg)}
 
 .cert-slider{position:relative;min-width:0;display:flex;align-items:center;gap:.6rem}
 .cert-slider__arrow{flex:none;display:flex;align-items:center;justify-content:center;width:44px;height:44px;border-radius:50%;border:1px solid var(--line);background:#fff;color:var(--navy);cursor:pointer;box-shadow:var(--shadow-lg);transition:transform .3s var(--ease),background .3s,color .3s}
@@ -669,6 +669,7 @@ iframe.skiptranslate,.goog-te-banner-frame{display:none!important;visibility:hid
   .export__grid{gap:36px}
   .cert-grid{grid-template-columns:repeat(2,1fr)}
   .cert-split{grid-template-columns:1fr;gap:1.8rem}
+  .cert-badges{aspect-ratio:1024/885;min-height:220px}
   .ind-grid{grid-template-columns:repeat(3,1fr)}
   .dl-grid{grid-template-columns:repeat(2,1fr)}
 }
