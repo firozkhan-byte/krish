@@ -484,7 +484,7 @@
   window.googleTranslateElementInit = function () {
     new google.translate.TranslateElement({
       pageLanguage: 'en',
-      includedLanguages: 'en,zh-CN,de,fr',
+      includedLanguages: 'en,zh-CN,ru',
       layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL,
       autoDisplay: false
     }, 'google_translate_element');
@@ -504,9 +504,9 @@
     const fallbackEl = doc.getElementById('langFallback');
     if (!widgetEl || !spinnerEl || !fallbackEl) return;
 
-    const browserLang = (navigator.language || 'en-US').split('-')[0];
-    const targetLang = browserLang === 'en' ? 'hi' : browserLang;
-    fallbackEl.href = `https://translate.google.com/translate?sl=en&tl=${targetLang}&u=${encodeURIComponent(location.href)}`;
+    fallbackEl.querySelectorAll('a[data-lang]').forEach((a) => {
+      a.href = `https://translate.google.com/translate?sl=en&tl=${a.dataset.lang}&u=${encodeURIComponent(location.href)}`;
+    });
 
     let resolved = false;
     let attempts = 0;
