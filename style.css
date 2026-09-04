@@ -551,20 +551,6 @@ iframe.skiptranslate,.goog-te-banner-frame{display:none!important;visibility:hid
 .cert-doc-card__label i{color:var(--gold-600);font-size:.85rem;flex:none}
 
 /* =====================================================================
-   DOWNLOADS
-   ===================================================================== */
-.downloads{background:linear-gradient(180deg,var(--cream),var(--bg))}
-.dl-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.1rem}
-.dl-card{display:flex;align-items:center;gap:1rem;background:#fff;border:1px solid var(--line);border-radius:var(--radius-sm);padding:1.2rem 1.3rem;transition:transform .35s var(--ease),box-shadow .35s var(--ease),border-color .35s}
-.dl-card:hover{transform:translateY(-4px);box-shadow:var(--shadow);border-color:var(--blue-accent)}
-.dl-card>i:first-child{font-size:1.9rem;color:#e0574f}
-.dl-card div{flex:1;min-width:0}
-.dl-card strong{display:block;font-family:var(--font-head);font-size:.98rem;color:var(--navy)}
-.dl-card span{font-size:.8rem;color:var(--muted)}
-.dl-card__go{color:var(--blue-accent);transition:transform .3s var(--ease)}
-.dl-card:hover .dl-card__go{transform:translateY(3px)}
-
-/* =====================================================================
    CONTACT
    ===================================================================== */
 .contact{background:var(--bg)}
@@ -594,7 +580,7 @@ iframe.skiptranslate,.goog-te-banner-frame{display:none!important;visibility:hid
    FOOTER
    ===================================================================== */
 .footer{background:var(--navy-900);color:rgba(255,255,255,.8);padding-top:clamp(50px,7vw,84px)}
-.footer__grid{display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr 1.3fr;gap:2rem}
+.footer__grid{display:grid;grid-template-columns:1.6fr 1fr 1fr 1.3fr;gap:2rem}
 .footer__logo{margin-bottom:1.2rem;max-width:320px;padding:6px 10px;background:rgba(255,255,255,.95);border-radius:10px}
 .footer__logo-img{width:100%;height:auto;object-fit:contain;display:block}
 .footer__brand p{font-size:.9rem;max-width:34ch;margin:0 0 1.2rem}
@@ -673,7 +659,6 @@ iframe.skiptranslate,.goog-te-banner-frame{display:none!important;visibility:hid
   .cert-grid{grid-template-columns:repeat(2,1fr)}
   .cert-doc-grid{grid-template-columns:repeat(3,1fr)}
   .ind-grid{grid-template-columns:repeat(3,1fr)}
-  .dl-grid{grid-template-columns:repeat(2,1fr)}
 }
 @media (max-width:640px){
   .brand__logo-img{height:42px;max-width:170px}
@@ -682,7 +667,6 @@ iframe.skiptranslate,.goog-te-banner-frame{display:none!important;visibility:hid
   .ind-grid{grid-template-columns:repeat(2,1fr)}
   .cert-grid{grid-template-columns:1fr}
   .cert-doc-grid{grid-template-columns:repeat(2,1fr)}
-  .dl-grid{grid-template-columns:1fr}
   .field-row{grid-template-columns:1fr}
   .footer__grid{grid-template-columns:1fr 1fr}
   .footer__news{grid-column:1/-1}
