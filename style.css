@@ -555,6 +555,11 @@ iframe.skiptranslate,.goog-te-banner-frame{display:none!important;visibility:hid
 .cert-doc-card__label{display:flex;align-items:center;gap:.5rem;padding:1rem 1.1rem;font-family:var(--font-head);font-size:.82rem;font-weight:700;color:var(--navy)}
 .cert-doc-card__label i{color:var(--gold-600);font-size:.85rem;flex:none}
 
+.brand-logo-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.4rem;margin-top:2.2rem}
+.brand-logo-card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;transition:transform .4s var(--ease),box-shadow .4s var(--ease),border-color .4s}
+.brand-logo-card:hover{transform:translateY(-8px);box-shadow:var(--shadow-lg);border-color:transparent}
+.brand-logo-card img{width:100%;aspect-ratio:3/4;object-fit:cover;display:block;background:#fff}
+
 /* =====================================================================
    CONTACT
    ===================================================================== */
@@ -665,6 +670,7 @@ iframe.skiptranslate,.goog-te-banner-frame{display:none!important;visibility:hid
   .cert-grid{grid-template-columns:repeat(2,1fr)}
   .cert-doc-grid{grid-template-columns:repeat(3,1fr)}
   .ind-grid{grid-template-columns:repeat(3,1fr)}
+  .brand-logo-grid{grid-template-columns:repeat(2,1fr)}
   .filters{
     flex-wrap:nowrap;justify-content:flex-start;overflow-x:auto;-webkit-overflow-scrolling:touch;
     scrollbar-width:none;margin-inline:calc(-1 * var(--gutter));padding-inline:var(--gutter);
