@@ -578,6 +578,7 @@ iframe.skiptranslate,.goog-te-banner-frame{display:none!important;visibility:hid
 .cert-badges img{max-width:560px;width:100%;height:auto;display:inline-block;background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:1.4rem;box-shadow:var(--shadow-lg)}
 
 .cert-doc-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:1.2rem;margin-top:2.2rem}
+.reg-doc-grid{grid-template-columns:repeat(4,1fr)}
 .cert-doc-card{display:block;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;transition:transform .4s var(--ease),box-shadow .4s var(--ease),border-color .4s}
 .cert-doc-card:hover{transform:translateY(-8px);box-shadow:var(--shadow-lg);border-color:transparent}
 .cert-doc-card img{width:100%;aspect-ratio:3/4;object-fit:cover;object-position:top center;display:block;background:#fff}
@@ -699,6 +700,7 @@ iframe.skiptranslate,.goog-te-banner-frame{display:none!important;visibility:hid
   .export__grid{gap:36px}
   .cert-grid{grid-template-columns:repeat(2,1fr)}
   .cert-doc-grid{grid-template-columns:repeat(3,1fr)}
+  .reg-doc-grid{grid-template-columns:repeat(2,1fr)}
   .ind-grid{grid-template-columns:repeat(3,1fr)}
   .brand-logo-grid{grid-template-columns:repeat(2,1fr)}
   .filters{
