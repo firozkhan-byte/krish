@@ -584,7 +584,7 @@ iframe.skiptranslate,.goog-te-banner-frame{display:none!important;visibility:hid
 .cert-doc-card__label{display:flex;align-items:center;gap:.5rem;padding:1rem 1.1rem;font-family:var(--font-head);font-size:.82rem;font-weight:700;color:var(--navy)}
 .cert-doc-card__label i{color:var(--gold-600);font-size:.85rem;flex:none}
 
-.reg-doc-list{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-top:2.2rem}
+.reg-doc-list{display:grid;grid-template-columns:repeat(5,1fr);gap:1rem;margin-top:2.2rem}
 .reg-doc-item{
   display:flex;align-items:center;gap:.9rem;padding:1.1rem 1.3rem;
   background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);
