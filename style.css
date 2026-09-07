@@ -404,10 +404,6 @@ iframe.skiptranslate,.goog-te-banner-frame{display:none!important;visibility:hid
   border:4px solid var(--cream);box-shadow:0 12px 26px -12px rgba(14,77,60,.35);
 }
 .founder-card__photo img{width:100%;height:100%;object-fit:cover;display:block}
-.founder-card__photo--placeholder{
-  display:flex;align-items:center;justify-content:center;background:var(--cream);
-  color:var(--gold);font-size:2.6rem;border-style:dashed;
-}
 .founder-card__name{font-size:1.24rem;color:var(--navy);margin-bottom:.3rem}
 .founder-card__title{font-size:.85rem;color:var(--gold);font-weight:700;letter-spacing:.01em;margin:0 0 1.6rem}
 .founder-card__block{text-align:left;margin-top:1.6rem;padding-top:1.6rem;border-top:1px solid var(--line)}
@@ -417,7 +413,6 @@ iframe.skiptranslate,.goog-te-banner-frame{display:none!important;visibility:hid
 .founder-profile__row:first-child{border-top:none;padding-top:0}
 .founder-profile__row dt{font-family:var(--font-head);font-size:.72rem;font-weight:700;color:var(--gold);text-transform:uppercase;letter-spacing:.04em;margin-bottom:.25rem}
 .founder-profile__row dd{font-size:.9rem;color:var(--muted);margin:0;line-height:1.6}
-.founder-card--pending{display:flex;flex-direction:column;align-items:center;justify-content:flex-start}
 
 @media (max-width:900px){
   .founder-grid{grid-template-columns:1fr}
