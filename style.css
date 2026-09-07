@@ -392,7 +392,7 @@ iframe.skiptranslate,.goog-te-banner-frame{display:none!important;visibility:hid
 /* =====================================================================
    FOUNDERS
    ===================================================================== */
-.founder-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1.8rem;align-items:start}
+.founder-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1.8rem;align-items:stretch}
 .founder-card{
   background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);
   padding:2.4rem 2rem 2.2rem;text-align:center;
