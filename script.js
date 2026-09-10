@@ -444,7 +444,7 @@
   const quoteForm = doc.getElementById('quoteForm');
   const formNote = doc.getElementById('formNote');
   if (quoteForm) {
-    quoteForm.addEventListener('submit', (e) => {
+    quoteForm.addEventListener('submit', async (e) => {
       e.preventDefault();
       const name = quoteForm.name.value.trim();
       const email = quoteForm.email.value.trim();
@@ -454,9 +454,31 @@
         formNote.className = 'form-note err';
         return;
       }
-      formNote.textContent = 'Thank you! Your quote request has been noted — our export desk will reply shortly.';
-      formNote.className = 'form-note ok';
-      quoteForm.reset();
+      const submitBtn = quoteForm.querySelector('button[type="submit"]');
+      if (submitBtn) submitBtn.disabled = true;
+      try {
+        const res = await fetch('/api/send-quote', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            name,
+            email,
+            country: quoteForm.country.value.trim(),
+            company: quoteForm.company.value.trim(),
+            product: quoteForm.product.value,
+            message: quoteForm.message.value.trim(),
+          }),
+        });
+        if (!res.ok) throw new Error('request failed');
+        formNote.textContent = 'Thank you! Your quote request has been sent — our export desk will reply shortly.';
+        formNote.className = 'form-note ok';
+        quoteForm.reset();
+      } catch (err) {
+        formNote.textContent = 'Sorry, something went wrong sending your request. Please email us directly or try again.';
+        formNote.className = 'form-note err';
+      } finally {
+        if (submitBtn) submitBtn.disabled = false;
+      }
     });
   }
   const newsForm = doc.getElementById('newsForm');
